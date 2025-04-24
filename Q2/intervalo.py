@@ -5,7 +5,9 @@ soma = 0
 # if (n1 < 0) or (n2 < 0) or (n1 < n2):
 #     print("Intervalo de valores inválido")
 # else:
-for i in range(n1, n2+1):
-    while ((i % 2) != 0):
-        soma += i
-    print(f"Soma dos ímpares neste intervalo: {soma}")
+for n in range(n1, n2+1):
+    if ((n % 2) != 0):
+        soma += n
+
+print(f"Soma dos ímpares neste intervalo: {soma}")
+    
