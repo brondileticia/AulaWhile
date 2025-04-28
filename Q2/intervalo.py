@@ -1,13 +1,16 @@
-n1 =  int(input("Digite o valor inicial: "))
-n2 =  int(input("Digite o valor final: "))
-soma = 0
+inicio =  int(input("Digite o valor inicial: "))
+fim =  int(input("Digite o valor final: "))
 
-# if (n1 < 0) or (n2 < 0) or (n1 < n2):
-#     print("Intervalo de valores inválido")
-# else:
-for n in range(n1, n2+1):
-    if ((n % 2) != 0):
-        soma += n
+if inicio > fim:
+    print("Intervalo de valores inválido")
+else:
+    soma = 0
+    n = inicio
+    
+    while n <= fim:
+        if n % 2 != 0:
+            soma += n
+        n += 1
 
 print(f"Soma dos ímpares neste intervalo: {soma}")
     
